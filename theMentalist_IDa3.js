@@ -2,24 +2,23 @@ var secretNumber = parseInt(Math.random()*11)
 
 function Guess(){   
 
+var h2Integration = document.getElementById("result")
+
 var buttonIntegration = parseInt(document.getElementById("value").value)
 
 if (secretNumber == buttonIntegration){ 
-    alert("You won!") 
+    h2Integration.innerHTML ="You won!" 
 } else if (buttonIntegration > 10 || buttonIntegration <0) {
-   alert("Please type a number from 1 to 10.") 
+   h2Integration.innerHTML ="Please type a number from 1 to 10."
 } else {
-    alert("That is not the secret number.")
+    h2Integration.innerHTML ="That is not the secret number. \n \n The secret number is " + secretNumber
 } 
-var h2Integration = document.getElementById("result")
-var textInnerh2 = ("The secret number is " + secretNumber)
-h2Integration.innerHTML = textInnerh2
 }
 
 
   
 
-
+//var textInnerh2 = ("The secret number is " + secretNumber)
 
 
 
