@@ -11,7 +11,7 @@ if (secretNumber == buttonIntegration){
 } else if (buttonIntegration > 10 || buttonIntegration <0) {
    h2Integration.innerHTML ="Please type a number from 1 to 10."
 } else {
-    h2Integration.innerHTML ="That is not the secret number. \n \n The secret number is " + secretNumber
+    h2Integration.innerHTML ="That is not the secret number. \n \n The secret number is " + secretNumber +"."
 } 
 }
 
