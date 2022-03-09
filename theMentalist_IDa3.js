@@ -1,6 +1,4 @@
 var secretNumber = parseInt(Math.random()*11)
-alert(secretNumber)
-
 
 function Guess(){   
 
@@ -11,8 +9,11 @@ if (secretNumber == buttonIntegration){
 } else if (buttonIntegration > 10 || buttonIntegration <0) {
    alert("Please type a number from 1 to 10.") 
 } else {
-    alert("That is not the secret number. \n \nTry again.")
+    alert("That is not the secret number.")
 } 
+var h2Integration = document.getElementById("result")
+var textInnerh2 = ("The secret number is " + secretNumber)
+h2Integration.innerHTML = textInnerh2
 }
 
 
