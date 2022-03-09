@@ -1,12 +1,17 @@
+var secretNumber = parseInt(Math.random()*11)
+alert(secretNumber)
+
 
 function Guess(){   
-var secretNumber = 3
+
 var buttonIntegration = parseInt(document.getElementById("value").value)
 
-if (secretNumber === buttonIntegration){ 
+if (secretNumber == buttonIntegration){ 
     alert("You won!") 
+} else if (buttonIntegration > 10 || buttonIntegration <0) {
+   alert("Please type a number from 1 to 10.") 
 } else {
-    alert("You lost.")
+    alert("That is not the secret number. \n \nTry again.")
 } 
 }
 
